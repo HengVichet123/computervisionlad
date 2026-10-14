@@ -15,7 +15,10 @@
     header img { width: 52px; height: 52px; background: #fff; border-radius: 50%; padding: 3px; box-shadow: 0 1px 6px rgba(0,0,0,.08); }
     h1 { font-size: 24px; margin: 0; letter-spacing: -0.02em; }
     .sub { color: var(--ink2); font-size: 14px; margin: 0; }
-    video { width: min(100%, 380px); aspect-ratio: 9 / 16; border-radius: 18px; background: #000; box-shadow: 0 10px 40px rgba(0,0,0,.12); }
+    .videos { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; }
+    .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .item h2 { font-size: 16px; margin: 0; }
+    video { width: min(100%, 340px); aspect-ratio: 9 / 16; border-radius: 18px; background: #000; box-shadow: 0 10px 40px rgba(0,0,0,.12); }
     .note { color: var(--ink2); font-size: 13px; margin-top: 12px; text-align: center; }
   </style>
 </head>
@@ -24,10 +27,19 @@
     <img src="logo.svg" alt="ComputerVisionLad logo" />
     <div>
       <h1>ComputerVisionLad</h1>
-      <p class="sub">Epipolar geometry · draft 5</p>
+      <p class="sub">Drafts</p>
     </div>
   </header>
-  <video src="epipolar_draft5.mp4" controls playsinline muted preload="metadata" poster="poster.jpg"></video>
-  <p class="note">Silent draft: the voice is added after recording.</p>
+  <div class="videos">
+    <div class="item">
+      <h2>Epipolar geometry · draft 5</h2>
+      <video src="epipolar_draft5.mp4" controls playsinline muted preload="metadata" poster="poster.jpg"></video>
+    </div>
+    <div class="item">
+      <h2>The epipolar game · draft 1</h2>
+      <video src="epigame_draft1.mp4" controls playsinline muted preload="metadata" poster="poster_game.jpg"></video>
+    </div>
+  </div>
+  <p class="note">Silent drafts: the voice is added after recording.</p>
 </body>
 </html>
