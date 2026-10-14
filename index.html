@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ComputerVisionLad</title>
+  <link rel="icon" href="logo.svg" />
+  <style>
+    :root { --ink: #1c1c1e; --ink2: rgba(60,60,67,.62); --blue: #007aff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #f2f2f7; color: var(--ink);
+      font: 17px/1.45 -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', system-ui, sans-serif;
+      display: flex; flex-direction: column; align-items: center; padding: 28px 16px 48px; }
+    header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+    header img { width: 52px; height: 52px; background: #fff; border-radius: 50%; padding: 3px; box-shadow: 0 1px 6px rgba(0,0,0,.08); }
+    h1 { font-size: 24px; margin: 0; letter-spacing: -0.02em; }
+    .sub { color: var(--ink2); font-size: 14px; margin: 0; }
+    video { width: min(100%, 380px); aspect-ratio: 9 / 16; border-radius: 18px; background: #000; box-shadow: 0 10px 40px rgba(0,0,0,.12); }
+    .note { color: var(--ink2); font-size: 13px; margin-top: 12px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.svg" alt="ComputerVisionLad logo" />
+    <div>
+      <h1>ComputerVisionLad</h1>
+      <p class="sub">Epipolar geometry · draft 1</p>
+    </div>
+  </header>
+  <video src="epipolar_draft.mp4" controls playsinline muted preload="metadata" poster="poster.jpg"></video>
+  <p class="note">Silent draft: the voice is added after recording.</p>
+</body>
+</html>
